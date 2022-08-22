@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Manià | Web-development | Web-designer</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header id="top" class="main-hero">
+        <nav class="primary-nav">
+            <div class="content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about" onClick="scrollToAbout()">About</a></li>
+                    <li><a href="#Projects" onClick="scrollToProjects()">Projects</a></li>
+                    <li><a href="#Contact" onClick="scrollToContact()">Contact</a></li>
+                    <li>
+                        <a href="#" id="change-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.919 285.919"><path d="M142.959 0C64.131 0 0 64.132 0 142.96s64.131 142.959 142.959 142.959 142.96-64.131 142.96-142.959S221.787 0 142.959 0zm0 260.919V25c65.043 0 117.96 52.917 117.96 117.96 0 65.043-52.917 117.959-117.96 117.959z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="page-hidden">
+            <div class="content">
+                <div class="hamburger">
+                    <label for="check">
+                        <input type="checkbox" onClick="togglemenu()" id="check" class="hamburger-nav"/> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <ul id="menu" class="menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="middle-content">
+        <div class="content">
+            <h1 class="title">Matteo Manià</h1>
+            <h3 class="subtitle">
+                I'm front-end developer
+            </h3>
+        </div>
+    </div>  
+
+    <div class="container">
+        <a href="#about" class="smooth" onClick="scrollToAbout()">
+            <div class="next">About</div>
+            <span class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="38" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </span>
+        </a>
+    </div>
+
+
+    <div class="content">
+        <section id="about">
+            <div class="box">
+                <h1 class="section title">About me</h1>
+                <p>
+                    I am heavily rational guy, full of energy, emotions and sometimes irritable.
+                    <br>
+                    -Perfectionist <br>
+                    -Minimal design lover <br>
+                    -Css enthusiast 
+                </p>
+                <p>
+                    I learned to make websites in 2021, when I started programming at school.
+                    This passion is exploded when i discovered all the things that can be done 
+                    with css, html and some js. (library included)
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>My projects</h1>
+            <h3>These are two of my Websites where I worked on</h3>
+            
+            <div class="container-flex">
+                <div class="row">
+                    <a href="">
+                        <div class="project">
+                            <img src="img/FotoAreaCrewWebsite.jpg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>Il Piccone</h3>
+                    </a>
+
+                    <a href="">
+                        <div class="project">
+                            <img src="img/FotoPicconieri.jpg" alt="" aria-hidden="true" />
+                        </div>
+                        <h3>AreaCrewWebsite</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Let's work togheter!<br></h1>
+            <div class="link-touch">
+                <a href="mailto:matteomania09@gmail.com">matteomania09@gmail.com</a>
+                <a href="https://discord.com/users/676456013326581782">Zippo107#6652</a>
+            </div>
+
+            <div class="mini-footer">
+                <h3>
+                    You can also contact me at these socials
+                </h3>
+
+                <div class="social-list">
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                        </li>
+                        <li><a href="" id="insta">Instagram</a></li>
+                        <li><a href="" id="facebook">Facebook</a></li>
+                        <li><a href="" id="github">Github</a></li>
+                        <li><a href="" id="reddit">Reddit</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </section>
+    </div>
+        
+
+    <script src="src/script.js"></script>
+    <script src="src/scrollSmooth.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</body>
+</html>
