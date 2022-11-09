@@ -76,7 +76,6 @@ h5 { font-size: var(--fs-verypretty); font-weight: var(--fw-semilight);}
 
 p { font-size: var(--fs-normal); font-weight: var(--fw-regular); }
 
-
 a {
     font-weight: var(--fw-bold);
     font-size: var(--fs-normal);
@@ -197,11 +196,15 @@ input[type="checkbox"]{
 
     .page-hidden .content ul li a {
         display: block;
-        padding: 10px 0;
+        padding: 18px 0;
         font-family: 'Montserrat', sans-serif;
         position: relative;
         color: var(--clr-text-secondary);
         transition: color .35s ease;
+    }
+
+    .page-hidden .content ul li:nth-child(1) {
+        margin-top: 25px;
     }
 
     .page-hidden .content ul li a:hover {
@@ -430,9 +433,12 @@ section {
     position: relative;
 }
 
+section {
+    min-height: 90vh;
+}
+
 section#about {
     padding-top: 125px;
-    height: 85vh;
 }
 
 .section.title {
@@ -511,7 +517,7 @@ section#contact a {
     clear: both;
     position: relative;
     height: 250px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 ul li {
