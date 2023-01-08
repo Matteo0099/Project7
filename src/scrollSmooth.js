@@ -1,9 +1,3 @@
-/*function scrollToHome(){
-    $('html, body').animate({
-        scrollTop: $('#home').offset().top
-    }, 850);
-}*/
-
 function scrollToAbout(){
     $('html, body').animate({
         scrollTop: $('#about').offset().top
@@ -22,22 +16,5 @@ function scrollToContact(){
     }, 825);
 }
 
-
 //var scrollBehaviorSupported = 'scroll-behavior' in document.documentElement.style;
 //console.log('scroll-behavior supported:', scrollBehaviorSupported);
-
-
-/*
-document.getElementById("#home").scrollIntoView({
-    behavior: 'smooth'
-});
-document.getElementById("#about").scrollIntoView({
-    behavior: 'smooth'
-});
-document.getElementById("#projects").scrollIntoView({
-    behavior: 'smooth'
-});
-document.getElementById("#contact").scrollIntoView({
-    behavior: 'smooth'
-});
-*/
